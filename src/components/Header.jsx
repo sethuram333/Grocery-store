@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { PiBasketFill } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 import { FaCartPlus } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
@@ -39,10 +41,10 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to=""
+                  to="allproducts"
                   className="text-green-800 hover:text-orange-500 text-[18px]"
                 >
-                  About
+                  Products
                 </Link>
               </li>
               <li>
@@ -59,6 +61,7 @@ const Header = () => {
 
           {/* login and cart */}
           <div className="flex items-center text-2xl justify-end gap-5">
+            <FaHeart  className="text-green-800 hover:text-red-600"/>
             <CgProfile className="text-green-800 hover:text-orange-500" />
             <FaCartPlus className="text-green-800 hover:text-orange-500" />
             <GiHamburgerMenu className="text-green-800 hover:text-orange-500 md:hidden" onClick={toggleMenu} />
@@ -83,7 +86,7 @@ const Header = () => {
                   onClick={() => setShowMenu(false)}
                   className="text-green-800 hover:text-orange-500 text-[18px]"
                 >
-                  About
+                  Products
                 </Link>
               </li>
               <li>

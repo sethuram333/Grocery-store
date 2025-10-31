@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
 
             <div>
-              <Button content="shop now" link="" />
+              <Button content="shop now" link="allproducts" />
             </div>
           </div>
 

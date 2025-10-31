@@ -3,6 +3,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import AllProducts from "./components/Home/AllProducts";
 
 
 const App = () => {
@@ -15,6 +16,10 @@ const App = () => {
           index: true,
           element: <Home />,
         },
+        {
+          path:'allproducts',
+          element:<AllProducts/>
+        }
      
       ],
     },

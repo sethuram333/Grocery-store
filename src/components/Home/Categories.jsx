@@ -32,7 +32,7 @@ const Categories = () => {
   return (
     <>
       <section>
-        <div className="2xl:container mx-auto  py-20 bg-[#f8f9fa]">
+        <div className="2xl:container mx-auto  py-20 ">
           <Topic first="Shop" second="By Category" />
           {/* category card */}
           <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-15">

@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <>
       <Link to={props.link}>
-        <button className="bg-orange-500 px-5 py-3 font-[poppins] rounded-md text-white hover:scale-105 hover:bg-orange-700 transition-all duration-300 cursor-pointer">
+        <button className="bg-orange-500 px-5 py-3 font-[poppins] rounded-md text-white  hover:bg-green-700 transition-all duration-300 cursor-pointer">
           {props.content}
         </button>
       </Link>
