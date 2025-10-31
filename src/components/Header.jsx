@@ -82,7 +82,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="sdfnsd"
+                  to="allproducts"
                   onClick={() => setShowMenu(false)}
                   className="text-green-800 hover:text-orange-500 text-[18px]"
                 >
