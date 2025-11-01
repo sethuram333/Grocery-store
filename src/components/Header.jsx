@@ -8,15 +8,16 @@ import { FaHeart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
-  const [showMenu,setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
 
-  const toggleMenu =()=>{
-  setShowMenu(!showMenu)
-  }
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <>
-      <div className="2xl:container mx-auto bg-[#FFF]  py-5 fixed left-0 right-0 top-0 md:shadow-lg">
+      <header className="fixed top-0 left-0 right-0 bg-white  z-50">
+         <div className="2xl:container mx-auto bg-[#FFF]  py-5 md:shadow-lg">
         <div className="w-[90%] mx-auto  grid grid-cols-2 md:grid-cols-3">
           {/* logo */}
           <div className="">
@@ -25,7 +26,9 @@ const Header = () => {
               className="flex items-center gap-1 text-green-800 text-2xl font-semibold"
             >
               <PiBasketFill className="" />
-              <p className="font-[poppins]">Green<span className="text-orange-700">Mart</span></p>
+              <p className="font-[poppins]">
+                Green<span className="text-orange-700">Mart</span>
+              </p>
             </Link>
           </div>
           {/* nav pages */}
@@ -61,15 +64,21 @@ const Header = () => {
 
           {/* login and cart */}
           <div className="flex items-center text-2xl justify-end gap-5">
-            <FaHeart  className="text-green-800 hover:text-red-600"/>
+            <FaHeart className="text-green-800 hover:text-red-600" />
             <CgProfile className="text-green-800 hover:text-orange-500" />
             <FaCartPlus className="text-green-800 hover:text-orange-500" />
-            <GiHamburgerMenu className="text-green-800 hover:text-orange-500 md:hidden" onClick={toggleMenu} />
+            <GiHamburgerMenu
+              className="text-green-800 hover:text-orange-500 md:hidden"
+              onClick={toggleMenu}
+            />
           </div>
 
           {/*mobile view nav pages */}
-          <div className={`md:hidden  absolute top-[90px] left-0 w-full rounded-lg shadow-xl bg-green-500/10 backdrop-blur-xl transition-all duration-300 ease-in-out ${ showMenu ? "opacity-100 visible" : "opacity-0 invisible"} `}>
-
+          <div
+            className={`md:hidden  absolute top-[90px] left-0 w-full rounded-lg shadow-xl bg-green-500/10 backdrop-blur-xl transition-all duration-300 ease-in-out ${
+              showMenu ? "opacity-100 visible" : "opacity-0 invisible"
+            } `}
+          >
             <ul className="font-[poppins] flex flex-col items-center py-20 gap-y-8">
               <li>
                 <Link
@@ -103,6 +112,8 @@ const Header = () => {
           </div>
         </div>
       </div>
+      </header>
+     
     </>
   );
 };

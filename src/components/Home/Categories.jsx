@@ -22,7 +22,7 @@ const Categories = () => {
             {card.description}
           </p>
           <div className="mt-4">
-            <Button content="See All" />
+            <Button content="See All" link={card.link} />
           </div>
         </div>
       </div>
@@ -54,6 +54,7 @@ const category = [
       "Fresh and organic produce sourced daily from local farms.Explore a wide range seasonal Fruits",
     image:
       "https://ik.imagekit.io/sy9qynug0/grocery%20html,css,js/categories/fruits.jpg",
+      link:'allfruits'
   },
   {
     id: 2,
@@ -62,6 +63,7 @@ const category = [
       "High quality, responsiblity sourced meat and sea food. Choose from fresh cuts, marinated options, and more.",
     image:
       "https://ik.imagekit.io/sy9qynug0/grocery%20html,css,js/categories/meat%20product.jpeg",
+      link:'meatproducts'
   },
   {
     id: 3,
@@ -70,6 +72,7 @@ const category = [
       "Fresh and organic produce sourced daily from local farms.Explore a wide range crisp Vegetables",
     image:
       "https://ik.imagekit.io/sy9qynug0/grocery%20html,css,js/categories/vegetables.jpg?updatedAt=1759409578589",
+      link:'allvegetables'
   },
   {
     id: 4,
@@ -78,5 +81,6 @@ const category = [
       "Wholesome dairy products and free-range eggs.From creamy milk and yogurt to artisanal cheeses",
     image:
       "https://ik.imagekit.io/sy9qynug0/grocery%20html,css,js/categories/dairy%20product.jpeg",
+      link:'dairyproducts'
   },
 ];
