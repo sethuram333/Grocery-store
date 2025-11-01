@@ -19,7 +19,7 @@ const Products = () => {
     
   return (
     <section>
-      <div className="2xl:container mx-auto  py-20">
+      <div className="2xl:container mx-auto py-20">
         <Topic first="Our" second="Products" />
 
         {/* Category Buttons */}
