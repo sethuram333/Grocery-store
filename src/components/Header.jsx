@@ -65,8 +65,15 @@ const Header = () => {
           {/* login and cart */}
           <div className="flex items-center text-2xl justify-end gap-5">
             <FaHeart className="text-green-800 hover:text-red-600" />
+
             <CgProfile className="text-green-800 hover:text-orange-500" />
-            <FaCartPlus className="text-green-800 hover:text-orange-500" />
+
+             <div className="flex items-center justify-center">
+              <span className="text-[13px] font-[poppins] text-red-500 ">0</span>
+              <Link to="shopcart">  <FaCartPlus className="text-green-800 hover:text-orange-500" /></Link>
+             </div>
+          
+
             <GiHamburgerMenu
               className="text-green-800 hover:text-orange-500 md:hidden"
               onClick={toggleMenu}

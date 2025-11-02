@@ -8,6 +8,7 @@ import Fruit from "./pages/categories/Fruit";
 import Meat from "./pages/categories/Meat";
 import Vegitables from "./pages/categories/Vegitables";
 import Dairy from './pages/categories/Dairy'
+import Cart from "./pages/Cart/Cart";
 
 const App = () => {
   const router = createHashRouter([
@@ -38,6 +39,10 @@ const App = () => {
         {
           path:'dairyproducts',
           element:<Dairy/>
+        },
+        {
+          path:'shopcart',
+          element:<Cart/>
         }
      
       ],
