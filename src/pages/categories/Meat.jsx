@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from "../../components/cards/Card";
+import Banner from '../../components/Banner/Banner';
 
 const Meat = () => {
     const renderMeat = meatproduct.map((item)=>{
@@ -11,12 +12,9 @@ const Meat = () => {
   return (
      <>
   <div className='2xl:container mx-auto mt-25'>
-    
-    <div className='w-[90%] mx-auto bg-amber-300 '>
-     <h1 className='text-3xl font-[poppins] text-center py-5 '>Meat Products</h1>
-    </div>
+  <Banner title="Meat products" bgImage="https://ik.imagekit.io/sy9qynug0/grocery%20html,css,js/WhatsApp%20Image%202025-11-02%20at%2012.38.27%20PM.jpeg"/>
 
-    <div className='w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-15 px-2 bg-[#EEE] shadow-xl'>
+    <div className='w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10 px-2 bg-[#EEE] shadow-xl mt-10'>
      {renderMeat}
         
     </div>
